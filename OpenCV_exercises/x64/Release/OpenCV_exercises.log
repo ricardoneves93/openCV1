@@ -1,0 +1,18 @@
+﻿Build started 23/09/2015 22:21:06.
+     1>Project "A:\Documentos\Git\OpenCV_exercises\OpenCV_exercises\OpenCV_exercises.vcxproj" on node 2 (build target(s)).
+     1>C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(983,5): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend.
+     1>PrepareForBuild:
+         Creating directory "A:\Documentos\Git\OpenCV_exercises\x64\Release\".
+       InitializeBuildStatus:
+         Creating "x64\Release\OpenCV_exercises.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt OpenCV_exercises.cpp stdafx.cpp
+         OpenCV_exercises.cpp
+     1>OpenCV_exercises.cpp(5): fatal error C1083: Cannot open include file: 'opencv2/core/core.hpp': No such file or directory
+         stdafx.cpp
+         Generating Code...
+     1>Done Building Project "A:\Documentos\Git\OpenCV_exercises\OpenCV_exercises\OpenCV_exercises.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.12
