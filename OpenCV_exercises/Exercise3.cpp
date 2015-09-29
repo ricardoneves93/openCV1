@@ -41,6 +41,28 @@ void Exercise3::c()
 
 }
 
+void Exercise3::d()
+{
+	Mat bgr = imread(this->imageName);
+	if (!bgr.data)
+	{
+		cout << "No image data!" << endl;
+		system("pause");
+	}
+	Mat hsv;
+	cvtColor(bgr, hsv, CV_BGR2HSV);
+	imshow("RGB image", bgr);
+	imshow("HSV image", hsv);
+	// split hsv channels
+	vector<Mat> channels;
+	split(hsv, channels);
+	vector<Mat> separatedChannels = this->showSeparatedChannels(channels);
+	//imshow("Hue channel", separatedChannels[0]);
+	//imshow("Saturation channel", separatedChannels[1]);
+	//imshow("Value channel", separatedChannels[2]);
+	waitKey(0);
+}
+
 vector<Mat> Exercise3::showSeparatedChannels(vector<Mat> channels)
 {
 	vector<Mat> separatedChannels;
