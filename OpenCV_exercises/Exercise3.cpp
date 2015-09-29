@@ -51,15 +51,15 @@ void Exercise3::d()
 	}
 	Mat hsv;
 	cvtColor(bgr, hsv, CV_BGR2HSV);
-	imshow("RGB image", bgr);
-	imshow("HSV image", hsv);
+	//imshow("RGB image", bgr);
+	//imshow("HSV image", hsv);
 	// split hsv channels
 	vector<Mat> channels;
 	split(hsv, channels);
 	vector<Mat> separatedChannels = this->showSeparatedChannels(channels);
-	//imshow("Hue channel", separatedChannels[0]);
-	//imshow("Saturation channel", separatedChannels[1]);
-	//imshow("Value channel", separatedChannels[2]);
+	imshow("Hue channel", separatedChannels[0]);
+	imshow("Saturation channel", separatedChannels[1]);
+	imshow("Value channel", separatedChannels[2]);
 	waitKey(0);
 }
 
