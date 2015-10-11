@@ -8,6 +8,7 @@
 #include "Exercise3.h"
 #include "Exercise4.h"
 #include "Exercise5.h"
+#include "Exercise6.h"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include<opencv2/opencv.hpp>
@@ -60,4 +61,12 @@ int main( int argc, char** argv )
 	//exercise5->a();
 	//exercise5->b();
 	delete exercise5;
+
+	//Exercise 6
+	Exercise6 *exercise6 = new Exercise6("open.png");
+	exercise6->a();
+	//exercise6->b();
+	//exercise6->c();
+	//exercise6->d();
+	delete exercise6;
 }
